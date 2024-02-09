@@ -1,12 +1,10 @@
-package lambdas;
-
-import java.util.Arrays;
-import java.util.List;
+package streamsAndLamdas;
+import java.util.*;
 import java.util.stream.Collectors;
 
-public class StringSort
-{
-    public List<String> sortBasedOnLength(String[] stringArray) {
+public class SortingStrings {
+
+    public static List<String> sortBasedOnLength(String[] stringArray) {
         return Arrays.stream(stringArray)
                 .sorted((stringOne, stringTwo) -> {
                     if(stringOne.length() == stringTwo.length())
